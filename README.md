@@ -1,10 +1,15 @@
-# Keylogger
-I created basic keylogger example using C# for my OOP Lecture weekly assignment.
+# Key Display App
+A key display application built with C# for my OOP Lecture weekly assignment.
+
 ## Features
-* Gets computer and network information.
-* Saves every single key and special characters.
+* Displays CPU, RAM, network, and OS information on startup.
+* Captures and displays keystrokes including special keys (Enter, Backspace, Shift, etc.).
+* Saves keystrokes to a log file.
+
+## Libraries
+* `System.Management` — CPU and RAM info via WMI
+* `System.Net.NetworkInformation` — IP and MAC address
+* `System.Runtime.InteropServices` — Windows API (GetAsyncKeyState)
 
 ## Disclaimer
-* This project is created for educational purposes.
-* Use education purpose only
-
+* This project is created for educational purposes only.
