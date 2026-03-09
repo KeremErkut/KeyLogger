@@ -6,7 +6,7 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace KeyDisplayApp
+namespace Keylogger
 {
     // --- EventArgs class for key press events ---
     public class KeyPressedEventArgs : EventArgs
@@ -259,15 +259,15 @@ namespace KeyDisplayApp
     {
         static void Main(string[] args)
         {
-            Console.Title = "Key Display App";
-            Console.WriteLine("=== Key Display App ===");
-            Console.WriteLine("On-screen key display for YouTube tutorials\n");
+            Console.Title = "Keylogger";
+            Console.WriteLine("=== Keylogger ===");
+           
 
             // Print system information at startup
             new SystemInfo().Print();
 
             // Set output file path inside the Documents folder
-            string folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string folder = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string path = Path.Combine(folder, "keylog.txt");
 
             // Create instances
